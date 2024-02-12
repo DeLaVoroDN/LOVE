@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <audio src="love.mp3" controls></audio>
+    <audio id="myAudio" src="love.mp3" preload="auto"></audio>
+    <button onclick="playAudio()">Play</button>
+
+    <script>
+      var audio = document.getElementById('myAudio');
+      function playAudio() {
+        audio.play();
+      }
+    </script>
 
     <div class="container">
       <div class="valentines">
