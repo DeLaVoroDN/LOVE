@@ -1,4 +1,7 @@
 body {
+  background-image: url('mylove.jpg'); /* Путь к вашему изображению */
+  background-size: cover; /* Заполнить фон всем экраном */
+  background-position: center; /* Выравнивание изображения по центру */
   display: flex;
   justify-content: center;
   align-items: center;
