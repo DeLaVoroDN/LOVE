@@ -76,6 +76,25 @@ body {
 
   color: #003049;
 }
+/* Добавленные стили для кнопки */
+button {
+  background-color: #c31212; /* Зеленый цвет */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #45a049; /* Темно-зеленый цвет при наведении */
+}
 
 .heart {
   background-color: #d62828;
