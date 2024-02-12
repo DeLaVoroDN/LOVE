@@ -68,8 +68,8 @@ body {
 
 .text {
   position: absolute;
-  font-family: 'Snell Roundhand', cursive;
-  font-size: 17px;
+  /* font-family: 'Snell Roundhand', cursive; */
+  font-size: 21px;
   text-align: center;
   line-height: 25px;
   top: 25px;
