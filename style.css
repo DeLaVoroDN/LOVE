@@ -23,7 +23,21 @@ body {
   /* Устанавливаем позиционирование */
   position: relative;
 }
+.front {
+  position: relative;
+}
 
+.front p {
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
+  left: calc(50% + 29px); /* Изменение здесь */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: rgb(192, 22, 22);
+  z-index: 10;
+}
 /* Стили для элементов валентинки */
 .valentines {
   /* Устанавливаем позиционирование */
