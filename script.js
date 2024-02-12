@@ -30,3 +30,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+// Создайте массив с URL-адресами картинок заднего фона
+var backgroundImageUrls = [
+  'love1.jpg',
+  'love2.jpg',
+  'love3.jpg',
+  'love4.jpg',
+  'love5.jpg',
+  'love6.jpg',
+  'love7.jpg',
+  'love8.jpg',
+  'love9.jpg',
+  'love10.jpg',
+  'love11.jpg',
+  'love12.jpg',
+  'love13.jpg',
+  'love14.jpg',
+  'love15.jpg',
+  'love16.jpg',
+];
+var currentIndex = 0;
+
+// Функция для изменения заднего фона
+function changeBackgroundImage() {
+  // Увеличиваем индекс, чтобы переключиться на следующую картинку
+  currentIndex = (currentIndex + 1) % backgroundImageUrls.length;
+  // Устанавливаем новый задний фон с плавной анимацией
+  document.body.style.backgroundImage = 'url("' + backgroundImageUrls[currentIndex] + '")';
+}
+
+// Запускаем функцию изменения заднего фона каждые 5 секунд
+setInterval(changeBackgroundImage, 5000); // Изменяйте каждые 5 секунд (или другое желаемое время)
