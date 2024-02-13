@@ -15,7 +15,7 @@ body {
   height: 100vh;
   /* Цвет фона */
   background-color: #514442;
-  transition: background-image 5s ease; /* Плавное переключение заднего фона в течение 1 секунды */
+  transition: background-image 3s ease; /* Плавное переключение заднего фона в течение 1 секунды */
 }
 
 /* Стили для контейнера */

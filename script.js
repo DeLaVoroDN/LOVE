@@ -92,6 +92,22 @@ function changeBackgroundImage() {
   // Устанавливаем новый задний фон с плавной анимацией
   document.body.style.backgroundImage = 'url("' + backgroundImageUrls[currentIndex] + '")';
 }
+// Функция для изменения заднего фона
+function changeBackgroundImage() {
+  // Увеличиваем индекс, чтобы переключиться на следующую картинку
+  currentIndex = (currentIndex + 1) % backgroundImageUrls.length;
 
-// Запускаем функцию изменения заднего фона каждые 5 секунд
-setInterval(changeBackgroundImage, 10000); // Изменяйте каждые 5 секунд (или другое желаемое время)
+  // Создаем новый Image объект
+  const preloadImage = new Image();
+
+  // Загружаем следующее изображение
+  preloadImage.src = backgroundImageUrls[currentIndex];
+
+  // После загрузки изображения, меняем фон без момента разрыва
+  preloadImage.onload = () => {
+    document.body.style.backgroundImage = 'url("' + preloadImage.src + '")';
+  };
+}
+
+// Запускаем функцию изменения заднего фона каждые 7 секунд
+setInterval(changeBackgroundImage, 7000); // Изменяйте каждые 7 секунд (или другое желаемое время)
