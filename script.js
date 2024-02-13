@@ -60,4 +60,4 @@ function changeBackgroundImage() {
 }
 
 // Запускаем функцию изменения заднего фона каждые 5 секунд
-setInterval(changeBackgroundImage, 10000); // Изменяйте каждые 5 секунд (или другое желаемое время)
+setInterval(changeBackgroundImage, 7000); // Изменяйте каждые 5 секунд (или другое желаемое время)
