@@ -14,7 +14,7 @@ body {
   /* Задаем высоту равную высоте окна браузера */
   height: 100vh;
   /* Цвет фона */
-  background-color: #dd2b10;
+  background-color: #514442;
   transition: background-image 5s ease; /* Плавное переключение заднего фона в течение 1 секунды */
 }
 
