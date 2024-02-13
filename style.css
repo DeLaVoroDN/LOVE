@@ -1,6 +1,10 @@
-/* Общие стили для body */
 body {
-  overflow: hidden; /* Чтобы предотвратить появление полос прокрутки */
+  /* Фоновое изображение */
+  background-image: url('mylove.jpg');
+  /* Масштабируем фон на всю область */
+  background-size: cover;
+  /* Выравниваем фон по центру */
+  background-position: center;
   /* Используем flexbox для центрирования */
   display: flex;
   /* Центрируем по горизонтали */
@@ -9,23 +13,11 @@ body {
   align-items: center;
   /* Задаем высоту равную высоте окна браузера */
   height: 100vh;
+  /* Цвет фона */
+  background-color: #fae1dd;
+  transition: background-image 1s ease; /* Плавное переключение заднего фона в течение 1 секунды */
 }
 
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.background-video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 /* Стили для контейнера */
 .container {
   /* Устанавливаем позиционирование */
